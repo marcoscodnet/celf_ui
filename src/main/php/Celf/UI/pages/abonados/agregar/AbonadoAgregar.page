@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\abonados\agregar\AbonadoAgregar" templateLocation="pages/abonados/agregar/AbonadoAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="abonadoForm" type="AbonadoForm">
+		<param name="legend" value="msg:abonado.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarAbonado" />
+		<param name="method" value="str:post" />
+		<param name="abonado" value="abonado" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,16 @@
+<rasty specificationClass="Celf\UI\pages\areas\modificar\AreaModificar" templateLocation="pages/areas/modificar/AreaModificar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+	<param name="areaOid" value="get:oid" />
+
+
+	<component id="areaForm" type="AreaForm">
+		<param name="legend" value="msg:area.modificar.legend" />
+		<param name="action" value="linkActionModificarArea" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="area" value="area" />
+	</component>
+	
+</rasty>

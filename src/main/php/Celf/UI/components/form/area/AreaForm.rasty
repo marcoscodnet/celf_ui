@@ -1,0 +1,39 @@
+<rasty specificationClass="Celf\UI\components\form\area\AreaForm" templateLocation="AreaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="area.oid" />
+	</component>
+
+	<component id="email" type="InputText">
+		<param name="inputId" value="str:email" />
+		<param name="name" value="str:email" />
+		<param name="value" value="area.email" />
+		<param name="requiredMessage" value="msg:area.email.required" />
+		<param name="placeholder" value="msg:area.email" />
+		<param name="autocomplete" value="str:off" />
+		<param name="checkEmail" value="str:1" />
+		<param name="invalidEmailMessage" value="msg:email.formato.invalido" />
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="area.nombre" />
+		<param name="placeholder" value="msg:area.nombre" />
+		<param name="autocomplete" value="str:off" />
+		<param name="requiredMessage" value="msg:area.nombre.required" />
+	</component>
+	
+	
+	
+</rasty>

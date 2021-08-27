@@ -1,0 +1,111 @@
+<rasty specificationClass="Celf\UI\components\form\abonado\AbonadoForm" templateLocation="AbonadoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="abonado.oid" />
+	</component>
+
+	<component id="apellido" type="InputText">
+		<param name="inputId" value="str:apellido" />
+		<param name="name" value="str:apellido" />
+		<param name="value" value="abonado.apellido" />
+		<param name="requiredMessage" value="msg:abonado.apellido.required" />
+		<param name="placeholder" value="msg:abonado.apellido" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="abonado.nombre" />
+		<param name="placeholder" value="msg:abonado.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="calle" type="InputText">
+		<param name="inputId" value="str:calle" />
+		<param name="name" value="str:calle" />
+		<param name="value" value="abonado.calle" />
+		
+		<param name="placeholder" value="msg:abonado.calle" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="numero" type="InputText">
+		<param name="inputId" value="str:numero" />
+		<param name="name" value="str:numero" />
+		<param name="value" value="abonado.numero" />
+		
+		<param name="placeholder" value="msg:abonado.numero" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="complemento" type="InputTextArea">
+		<param name="inputId" value="str:complemento" />
+		<param name="name" value="str:complemento" />
+		<param name="value" value="abonado.complemento" />
+		<param name="placeholder" value="msg:abonado.complemento" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	<component id="piso" type="InputText">
+		<param name="inputId" value="str:piso" />
+		<param name="name" value="str:piso" />
+		<param name="value" value="abonado.piso" />
+		
+		<param name="placeholder" value="msg:abonado.piso" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="depto" type="InputText">
+		<param name="inputId" value="str:depto" />
+		<param name="name" value="str:depto" />
+		<param name="value" value="abonado.depto" />
+		
+		<param name="placeholder" value="msg:abonado.depto" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="abonado.telefono" />
+		
+		<param name="placeholder" value="msg:abonado.telefono" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="categoria" type="InputCombo">
+		<param name="inputId" value="str:categoria" />
+		<param name="name" value="str:categoria" />
+		<param name="value" value="abonado.categoria" />
+		<param name="options" value="categorias" />
+		<param name="placeholder" value="msg:abonado.categoria" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+
+	</component>
+	
+	<component id="pbx" type="InputCheckBox">
+		<param name="inputId" value="str:pbx" />
+		<param name="name" value="str:pbx" />
+		<param name="value"  value="str:pbx" />
+		<param name="isChecked" value="abonado.pbx" />
+	</component>
+	
+</rasty>

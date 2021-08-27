@@ -1,0 +1,16 @@
+<rasty specificationClass="Celf\UI\pages\estadoReclamos\modificar\EstadoReclamoModificar" templateLocation="pages/estadoReclamos/modificar/EstadoReclamoModificar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+	<param name="estadoReclamoOid" value="get:oid" />
+
+
+	<component id="estadoReclamoForm" type="EstadoReclamoForm">
+		<param name="legend" value="msg:estadoReclamo.modificar.legend" />
+		<param name="action" value="linkActionModificarEstadoReclamo" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="estadoReclamo" value="estadoReclamo" />
+	</component>
+	
+</rasty>

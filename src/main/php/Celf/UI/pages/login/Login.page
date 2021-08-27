@@ -1,0 +1,7 @@
+<rasty specificationClass="Celf\UI\pages\login\Login" templateLocation="pages/login/Login.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroSinMenuLayout" />
+	<param name="error" value="get:error" />
+
+		
+</rasty>

@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\instanciaReclamos\InstanciaReclamos" templateLocation="pages/instanciaReclamos/InstanciaReclamos.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="instanciaReclamosFilter" type="InstanciaReclamoFilter">
+		<param name="reclamo" value="reclamo" />
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="legend" />
+		<param name="legendAgain" value="str:instanciaReclamos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

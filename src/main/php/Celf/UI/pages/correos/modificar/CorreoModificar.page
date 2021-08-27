@@ -1,0 +1,16 @@
+<rasty specificationClass="Celf\UI\pages\correos\modificar\CorreoModificar" templateLocation="pages/correos/modificar/CorreoModificar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+	<param name="correoOid" value="get:oid" />
+
+
+	<component id="correoForm" type="CorreoForm">
+		<param name="legend" value="msg:correo.modificar.legend" />
+		<param name="action" value="linkActionModificarCorreo" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="correo" value="correo" />
+	</component>
+	
+</rasty>

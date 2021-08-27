@@ -1,0 +1,12 @@
+<rasty specificationClass="Celf\UI\layouts\CelfMetroLayout" templateLocation="CelfMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+
+	<component id="header" type="HeaderNavMetro">
+		<param name="pageMenuGroups" value="menuGroups" />
+	</component>
+
+	<component id="footer" type="FooterCelf">
+	</component>
+
+</rasty>

@@ -1,0 +1,32 @@
+<rasty specificationClass="Celf\UI\components\form\registracion\RegistracionConfirmarForm" templateLocation="RegistracionConfirmarForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="registracion.oid" />
+	</component>
+	
+	<component id="codigoValidacion" type="InputHidden">
+		<param name="inputId" value="str:codigoValidacion" />
+		<param name="name" value="str:codigoValidacion" />
+		<param name="value" value="registracion.codigoValidacion" />
+	</component>
+
+	<component id="captcha" type="InputText">
+		<param name="inputId" value="str:captcha" />
+		<param name="name" value="str:captcha" />
+		<param name="value" value="captcha" />
+		<param name="requiredMessage" value="msg:registracion.captcha.requerido" />
+		<param name="placeholder" value="msg:registracion.captcha" />
+	</component>
+	
+	
+</rasty>

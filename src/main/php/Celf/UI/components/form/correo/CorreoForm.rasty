@@ -1,0 +1,47 @@
+<rasty specificationClass="Celf\UI\components\form\correo\CorreoForm" templateLocation="CorreoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="correo.oid" />
+	</component>
+
+	
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="correo.nombre" />
+		<param name="placeholder" value="msg:correo.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="email" type="InputText">
+		<param name="inputId" value="str:email" />
+		<param name="name" value="str:email" />
+		<param name="value" value="correo.email" />
+		<param name="placeholder" value="msg:correo.email" />
+		<param name="checkEmail" value="str:1" />
+		<param name="invalidEmailMessage" value="msg:correo.email.required" />
+		<param name="requiredMessage" value="msg:correo.email.required" />
+	</component>
+	
+	
+	
+	<component id="activo" type="InputCheckBox">
+		<param name="inputId" value="str:activo" />
+		<param name="name" value="str:activo" />
+		<param name="value"  value="str:activo" />
+		<param name="isChecked" value="correo.activo" />
+	</component>
+	
+</rasty>

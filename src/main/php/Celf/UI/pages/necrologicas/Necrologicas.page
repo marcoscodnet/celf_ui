@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\necrologicas\Necrologicas" templateLocation="pages/necrologicas/Necrologicas.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="necrologicasFilter" type="NecrologicaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:necrologica.buscar" />
+		<param name="legendAgain" value="msg:necrologica.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

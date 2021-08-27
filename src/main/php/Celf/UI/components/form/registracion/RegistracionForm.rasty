@@ -1,0 +1,139 @@
+<rasty specificationClass="Celf\UI\components\form\registracion\RegistracionForm" templateLocation="RegistracionForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="registracion.oid" />
+	</component>
+
+	
+
+	<component id="documento" type="InputText">
+		<param name="inputId" value="str:documento" />
+		<param name="name" value="str:documento" />
+		<param name="value" value="registracion.documento" />
+		<param name="requiredMessage" value="msg:registracion.documento.requerido" />
+		<param name="placeholder" value="msg:registracion.documento" />		
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="registracion.nombre" />
+		<param name="requiredMessage" value="msg:registracion.nombre.requerido" />
+		<param name="placeholder" value="msg:registracion.nombre" />
+		
+		<param name="maxChars" value="str:50" />
+	</component>
+
+	<component id="apellido" type="InputText">
+		<param name="inputId" value="str:apellido" />
+		<param name="name" value="str:apellido" />
+		<param name="value" value="registracion.apellido" />
+		<param name="requiredMessage" value="msg:registracion.apellido.requerido" />
+		<param name="placeholder" value="msg:registracion.apellido" />
+		
+		<param name="maxChars" value="str:50" />
+	</component>
+	
+	
+	<component id="email" type="InputText">
+		<param name="inputId" value="str:email" />
+		<param name="name" value="str:email" />
+		<param name="value" value="registracion.email" />
+		<param name="placeholder" value="msg:registracion.email" />
+		<param name="requiredMessage" value="msg:registracion.email.requerido" />
+		<param name="checkEmail" value="str:1" />
+		<param name="invalidEmailMessage" value="msg:email.formato.invalido" />
+		<param name="maxChars" value="str:30" />
+	</component>
+
+	<component id="emailRepetir" type="InputText">
+		<param name="inputId" value="str:emailRepetir" />
+		<param name="name" value="str:emailRepetir" />
+		<param name="value" value="emailRepetir" />
+		<param name="placeholder" value="msg:registracion.emailRepetir" />
+		<param name="requiredMessage" value="msg:registracion.emailRepetir.requerido" />
+		<param name="checkEmail" value="str:1" />
+		<param name="invalidEmailMessage" value="msg:email.formato.invalido" />
+		<param name="maxChars" value="str:30" />
+	</component>
+		
+	<component id="clave" type="InputPassword">
+		<param name="inputId" value="str:clave" />
+		<param name="name" value="str:clave" />
+		<param name="value" value="registracion.clave" />
+		<param name="requiredMessage" value="msg:registracion.clave.requerida" />
+		<param name="placeholder" value="msg:registracion.clave" />
+		<param name="maxChars" value="str:20" />
+		<param name="properties" value="claveProperties" />
+	</component>
+	
+	<component id="claveRepetir" type="InputPassword">
+		<param name="inputId" value="str:claveRepetir" />
+		<param name="name" value="str:claveRepetir" />
+		<param name="value" value="claveRepetir" />
+		<param name="requiredMessage" value="msg:registracion.claveRepetir.requerida" />
+		<param name="placeholder" value="msg:registracion.claveRepetir" />
+		<param name="maxChars" value="str:20" />
+	</component>
+	
+
+	<component id="celular" type="InputText">
+		<param name="inputId" value="str:celular" />
+		<param name="name" value="str:celular" />
+		<param name="value" value="registracion.celular" />
+		<param name="requiredMessage" value="msg:registracion.celular.requerida" />
+		<param name="placeholder" value="msg:registracion.celular" />
+		
+		
+	</component>
+	
+	<component id="calle" type="InputText">
+		<param name="inputId" value="str:calle" />
+		<param name="name" value="str:calle" />
+		<param name="value" value="registracion.calle" />
+		<param name="requiredMessage" value="msg:registracion.calle.requerida" />
+		<param name="placeholder" value="msg:registracion.calle" />
+		
+		<param name="maxChars" value="str:50" />
+	</component>
+	
+	<component id="numero" type="InputNumber">
+		<param name="inputId" value="str:numero" />
+		<param name="name" value="str:numero" />
+		<param name="value" value="registracion.numero" />
+		<param name="requiredMessage" value="msg:registracion.numero.requerido" />
+		<param name="placeholder" value="msg:registracion.numero" />
+		<param name="maxChars" value="str:5" />
+	</component>
+	
+	<component id="piso" type="InputText">
+		<param name="inputId" value="str:piso" />
+		<param name="name" value="str:piso" />
+		<param name="value" value="registracion.piso" />
+		<param name="placeholder" value="msg:registracion.piso" />
+		
+		<param name="maxChars" value="str:3" />
+	</component>
+	
+	<component id="depto" type="InputText">
+		<param name="inputId" value="str:depto" />
+		<param name="name" value="str:depto" />
+		<param name="value" value="registracion.depto" />
+		<param name="placeholder" value="msg:registracion.depto" />
+		
+		<param name="maxChars" value="str:6" />
+	</component>
+	
+
+	
+</rasty>

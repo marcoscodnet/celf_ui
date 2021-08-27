@@ -1,0 +1,583 @@
+{
+"common.campos_obligatorios":"Campos requeridos",
+
+	"app.title":"Cooperativa de Electricidad de Las Flores",
+
+	"app.pdf.footer":"Cooperativa de Electricidad de Las Flores / ",
+	
+	"menu.page":"Opciones de la página",
+	"menu.main":"Menú de navegación",
+	"menu.main.reload":"Actualizar la página",
+	"menu.main.panel":"Panel de trabajo",
+	
+	"menu.admin":"Administración",
+	"menu.admin_home":"Tablero de control",
+	
+	"menu.logout":"Salir del sistema",
+	
+	"usuarios.title": "Listado de Usuarios",
+	
+	"usuarios.listar": "Listado de Usuarios",
+	"usuario.agregar": "Agregar un nuevo Usuario",
+	"usuario.agregar.title": "Agregar un nuevo Usuario",
+	"usuario.agregar.legend": "Ingrese los datos del Usuario",
+	
+	"user.add.username.repetead": "Ya existe un usuario para el nombre ingresado",
+	
+	"usuario.modificar": "Modificar datos del Usuario",
+	"usuario.modificar.title": "Modificar Usuario",
+	"usuario.modificar.legend": "Modifique los datos del Usuario",
+	
+	"usuario.eliminar": "Eliminar el Usuario",
+	"usuario.eliminar.title": "Eliminar Usuario",
+	"usuario.eliminar.legend": "Confirma eliminar el Usuario?",
+	
+	"usuario.eliminar.usuario.logueado.exception": "No puede eliminarse Ud mismo",
+	"usuario.eliminar.cliente.exception": "No puede eliminar a un cliente",
+	
+	"usuario.buscar": "Buscar Usuarios",
+	"usuario.buscar.again": "Afinar búsqueda...",
+
+	"usuario.username":"Nombre de usuario",
+	"usuario.username.unicity":"Ya existe un Usuario para el Nombre de usuario indicado",
+	"usuario.username.required":"Ingrese un nombre de usuario",
+	
+	"usuario.name":"Nombre",
+	"usuario.name.required":"Ingrese un nombre",
+	
+	"usuario.lastname":"Apellido",
+	"usuario.lastname.required":"Ingrese un apellido",
+	
+	"usuario.email":"E-mail",
+	"usuario.email.unicity":"Ya existe un Usuario para el E-mail indicado",
+	"usuario.email.required":"Ingrese un e-mail",
+	
+   	"usuario.password":"Clave",
+	"usuario.password.required":"Ingrese una clave",
+	
+	"usuario.password.repeat":"Repetir Clave",
+	"usuario.password.repeat.required":"Ingrese nuevamente la clave",
+	
+	"usuario.password.repeat.invalid":"Las claves ingresadas son distintas",
+	
+	"usuario.password.old":"Clave actual",
+	"usuario.password.old.required":"Ingrese la clave actual",
+
+	"usuario.newPassword":"Nueva clave",
+	"usuario.newPassword.required":"Ingrese la nueva clave",
+
+	"usuario.newPassword.repeat":"Repetir nueva clave",
+	"usuario.newPassword.repeat.required":"Ingrese nuevamente la clave",
+	
+	"user.password.invalid": "La clave ingresada no es la correcta",
+	
+	"usuario.cambiarClave.newPasswordRepetir.invalid": "Las nuevas claves ingresadas son distintas",
+	
+	
+	"solicitarNuevaClave.title": "Recupero de clave",
+	"solicitarNuevaClave.legend": "Recupero de clave",
+	"solicitarNuevaClave.submit": "Recuperar",
+	"solicitarNuevaClave.login": "Ingresar",
+	"solicitarNuevaClave.registrarse": "Registrarse",
+	
+	"solicitarNuevaClave.usuario.invalid": "Usuario no registrado",
+	"solicitarNuevaClaveSuccess.title": "Recupero de clave",
+	
+	"nuevaClave.confirmar.title": "Obtener nueva clave",
+	"nuevaClave.confirmar.legend": "Genera tu nueva clave",
+	
+	"nuevaClave.newPassword": "Nueva clave",
+	"nuevaClave.newPassword.repetir": "Repite la clave",
+	"nuevaClave.securitycode": "Código de verificación",
+	"nuevaClave.captcha": "Ingresa el código de verificación",
+	
+	"nuevaClave.captcha.invalido": "El código de verificación no es correcto", 
+	
+	"nuevaClave.newPassword.repetir.invalid": "Las claves ingresadas no coinciden", 
+	
+	"nuevaClave.newPassword.requerida": "Ingresa la nueva clave",
+	"nuevaClave.newPassword.repetir.requerida": "Ingresa nuevamente la clave",
+	"nuevaClave.captcha.requerido": "Ingresa el código de verificación",
+	
+	"nuevaClaveConfirmar.success.title": "Recupero de clave",
+	 
+	
+	"usuario.oid":"Código interno",
+	"usuario.lastLogin":"Último login",
+  	"usuario.loginFrom":"IP",
+  	
+  	"usuario.asignarRoles.title": "Asignando roles",
+	"usuario.asignarRoles.legend": "Asignar roles al usuario $1",
+	
+	"registracion.continuar": "Continuar",
+
+	"registracion.agregar.title": "Registrarse",
+	
+	"registracion.datos.legend": "Tus datos",
+	
+	"registracion.documento": "Nº documento",
+ 	
+ 	
+ 	"registracion.documento.repetido": "Ya existe un asociado registrado para el DNI indicado",
+ 	
+ 	"registracion.nombre": "Nombre",
+ 	"registracion.apellido": "Apellido",
+ 	
+ 	
+ 	"registracion.documento.requerido": "Ingresa tu Nº documento",
+ 	"registracion.nombre.requerido": "Ingresa tu Nombre",
+ 	"registracion.apellido.requerido": "Ingresa tu Apellido",
+ 	
+ 	"registracion.usuario.legend": "Crea tu usuario",
+ 	"registracion.email": "E-mail",
+ 	"registracion.emailRepetir": "Confirmar e-mail",
+ 	"registracion.clave": "Contraseña",
+ 	"registracion.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"usuario.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"registracion.claveRepetir": "Confirmar contraseña",
+	"registracion.claveRepetir.invalid": "Las contraseñas ingresadas no coinciden",
+	"registracion.emailRepetir.invalid": "Los e-mail ingresados no coinciden",
+	
+	"registracion.email.repetido": "Ya existe un asociado con el email ingresado",
+ 	"registracion.confirmar.codigoExpirado": "El código de validación no es válido",
+ 	
+ 	
+	"email.formato.invalido":"formato de e-mail incorrecto",
+
+ 	"registracion.email.requerido": "Ingresa tu e-mail",
+ 	"registracion.emailRepetir.requerido": "Confirma tu e-mail",
+ 	"registracion.clave.requerida": "Ingresa una Contraseña",
+ 	"registracion.claveRepetir.requerida": "Confirmar la contraseña",
+ 	
+ 	"registracion.datos.legend": "Tus datos",
+ 	
+ 	"registracion.celular": "Celular",
+ 	
+ 	"registracion.calle": "Calle",
+ 	"registracion.numero": "Número",
+ 	"registracion.piso": "Piso",
+ 	"registracion.depto": "Departamento",
+ 
+ 	
+ 	"registracion.calle.requerida": "Ingresa la calle de tu dirección",
+ 	"registracion.numero.requerido": "Ingresa el número de tu dirección",
+ 	
+ 	"registracion.confirmar.title": "Validando tu registración",
+  	"registracion.confirmar.legend": "Ingresa el código de seguridad",
+  	"registracion.securitycode": "Código de seguridad",
+  	"registracion.captcha": "Ingresa el código de seguridad",
+  	"registracion.captcha.requerido": "Ingresa el código de seguridad",
+  	"registracion.captcha.invalido": "El código de seguridad no es correcto",
+  	
+
+	"permission.add.name.repetead": "Ya existe ese nombre",
+
+	"permisos.title": "Listado de Permisos",
+	
+	"permisos.listar": "Listado de Permisos",
+	"permiso.agregar": "Agregar un nuevo Permiso",
+	"permiso.agregar.title": "Agregar un nuevo Permiso",
+	"permiso.agregar.legend": "Ingrese los datos del Permiso",
+	
+	"permiso.modificar": "Modificar datos del Permiso",
+	"permiso.modificar.title": "Modificar Permiso",
+	"permiso.modificar.legend": "Modifique los datos del Permiso",
+	
+	"permiso.buscar": "Buscar Permisos",
+	"permiso.buscar.again": "Afinar búsqueda...",
+
+	"permiso.oid":"Código",
+	"permiso.name":"Nombre",
+	"permiso.name.required":"Ingrese un nombre",
+	"permiso.name.unicity":"Ya existe un Permiso con el Nombre indicado",
+	"permiso.description":"Descripción",
+	"permiso.padre":"Padre",
+	
+
+	"roles.title": "Listado de Roles",
+	
+	"roles.listar": "Listado de Roles",
+	"rol.agregar": "Agregar un nuevo Rol",
+	"rol.agregar.title": "Agregar un nuevo Rol",
+	"rol.agregar.legend": "Ingrese los datos del Rol",
+	
+	"usergroup.add.name.repetead": "Ya existe un rol para el nombre ingresado",
+	
+	"rol.modificar": "Modificar datos del Rol",
+	"rol.modificar.title": "Modificar Rol",
+	"rol.modificar.legend": "Modifique los datos del Rol",
+	
+	"rol.buscar": "Buscar Roles",
+	"rol.buscar.again": "Afinar búsqueda...",
+
+	"rol.asignarPermisos.title": "Asignando permisos",
+	"rol.asignarPermisos.legend": "Asignar permisos al rol $1",
+
+	"rol.consultarPermisos.title": "Consultar permisos de un rol",
+	"rol.consultarPermisos.legend": "Permisos del rol $1",
+
+	"usuario.consultarRoles.legend" :"Consultando roles de $1",
+	"usuario.consultarRoles.title" :"Roles de usuario}",
+
+	"rol.oid":"Código",
+	"rol.name":"Nombre",
+	"rol.name.required":"Ingrese un nombre",
+	"rol.name.unicity":"Ya existe un Rol con el Nombre indicado",
+	"rol.description":"Descripción",
+	
+	"combo.empty": "- seleccionar -",
+	
+	"menu.seguridad":"Seguridad",
+
+	"user.required.exception.msg": "Debe iniciar sesión para operar el sistema", 
+	"user.permission.exception.msg": "No cuenta con los privilegios para realizar la operación",
+	"invalid.password.exception.msg": "La clave ingresada no es válida",
+	
+	"login.title":"Cooperativa de Electricidad de Las Flores",
+	"login.titulo":"Cooperativa de Electricidad de Las Flores",
+	"login.subtitulo":"Administración",
+	
+	"login.iniciar_sesion":"Iniciar sesión",
+	"login.username":"Usuario",
+	"login.password":"Clave",
+	"login.ingrese_username":"Ingrese un usuario",
+	"login.ingrese_password":"Ingrese una clave",
+	"login.ingresar":"Comenzar!",
+	"login.invalid_password": "La clave ingresada no es válida",
+	"login.user_not_found": "El usuario ingresado no es válido",
+	
+	"login.solicitarNuevaClave": "Olvidé mi clave",
+	"login.registrarse": "Registrarse",
+
+	"admin_home.title": "Cooperativa de Electricidad de Las Flores",
+	"admin_home.subtitle": "Administración",
+	
+	"grid.operaciones": "Operaciones",
+   	"grid.resultados": "Resultados de la búsqueda",
+   	
+   	"entitygrid.pagination.of": "de",
+   	"entitygrid.pagination.next": "siguiente",
+   	"entitygrid.pagination.previous": "anterior",
+    "entitygrid.pagination.first": "primero",
+    "entitygrid.pagination.last": "último",
+
+	
+    "form.aceptar": "Confirmar",
+    "form.cancelar": "Cancelar",
+    "form.volver": "Volver",
+    
+    "filter.buscar": "Buscar",
+    "filter.buscar.again": "Afinar búsqueda...",
+    "filter.resultados": "Resultados de la búsqueda",
+    "filter.opciones": "Opciones",
+    "filter.close.label": "Cerrar",
+ 
+ 	"criteria.fechaDesde": "Desde",
+    "criteria.fechaHasta": "Hasta",
+    
+    "criteria.sin_especificar": "- sin especificar -",
+	"criteria.no": "No",
+	"criteria.si": "Si",
+	"criteria.predefinidos": "Filtros predefinidos",
+	"criteria.estado": "Estado",
+	"criteria.anio": "Año",
+	"criteria.fecha": "Fecha",
+	      
+    "xxx": "yyy",
+ 
+ 	"addpopup.legend":"Agregar",
+    
+    "autocomplete.empty.result": "No se encontraron resultados",
+    "autocomplete.entity.add": "Agregar",
+	
+	"menu.usuarios":"Usuarios",
+	"menu.usuarios.agregar":"Nuevo Usuario",
+	"menu.usuarios.modificar":"Modificar Usuario",
+	"menu.usuarios.asignarRoles":"Asignar roles",
+	"menu.usuarios.consultarRoles":"Consultar roles",
+	"menu.usuarios.eliminar":"Eliminar Usuario",
+	
+	"menu.permisos":"Permisos",
+	"menu.permisos.agregar":"Nuevo Permiso",
+	"menu.permisos.modificar":"Modificar Permiso",
+	"menu.permisos.eliminar":"Eliminar Permiso",
+	
+	"menu.roles":"Roles",
+	"menu.roles.agregar":"Nuevo Rol",
+	"menu.roles.modificar":"Modificar Rol",
+	"menu.roles.eliminar":"Eliminar Rol",
+	"menu.roles.asignarPermisos":"Asignar permisos",
+	"menu.roles.consultarPermisos":"Consultar permisos",
+	
+	
+	"menu.areas":"Areas",
+	"menu.areas.listar":"Listado de Areas",
+	"menu.areas.agregar":"Agregar Area",
+	"menu.areas.modificar":"Modificar Areas",
+	"menu.area.eliminar":"Eliminar el Area",
+
+	"menu.reclamos":"Reclamos",
+	"menu.reclamos.listar":"Listado de Reclamos",
+	"menu.reclamos.agregar":"Agregar Reclamo",
+	"menu.reclamos.modificar":"Modificar Reclamos",
+	"menu.reclamo.eliminar":"Eliminar el Reclamo",
+	"menu.reclamos.instanciaReclamos":"Instancias del reclamo",
+	
+	"menu.reclamos.iniciar":"Iniciar Reclamo",
+
+	
+	"menu.tipoReclamos":"Tipos de Reclamos",
+	"menu.tipoReclamos.listar":"Listado de Tipos de Reclamos",
+	"menu.tipoReclamos.agregar":"Agregar Tipo de Reclamo",
+	"menu.tipoReclamos.modificar":"Modificar Tipos de Reclamos",
+	"menu.tipoReclamo.eliminar":"Eliminar el Tipo de Reclamo",
+	
+	"menu.estadoReclamos":"Estados de Reclamos",
+	"menu.estadoReclamos.listar":"Listado de Estados de Reclamos",
+	"menu.estadoReclamos.agregar":"Agregar Area",
+	"menu.estadoReclamos.modificar":"Modificar Estados de Reclamos",
+	"menu.estadoReclamo.eliminar":"Eliminar el Estado de Reclamo",
+	
+	"menu.abonados":"Abonados",
+	"menu.abonados.listar":"Listado de Abonados",
+	"menu.abonados.agregar":"Agregar Abonado",
+	"menu.abonados.modificar":"Modificar Abonados",
+	"menu.abonado.eliminar":"Eliminar el Abonado",
+	
+	"menu.correos":"E-mails",
+	"menu.correos.listar":"Listado de E-mails",
+	"menu.correos.agregar":"Agregar E-mail",
+	"menu.correos.modificar":"Modificar E-mails",
+	"menu.correo.eliminar":"Eliminar el E-mail",
+	
+	
+	
+	"menu.necrologicas":"Necrológicas",
+	"menu.necrologica.listar":"Listado de Necrológica",
+	"menu.necrologica.agregar":"Agregar Necrológica",
+	"menu.necrologicas.modificar":"Modificar Necrológicas",
+	"menu.necrologica.eliminar":"Eliminar el Necrológica",
+	
+	"area.title": "Listado de Areas",
+	"area.agregar": "Agregar un área",
+	"area.agregar.title": "Agregar un área",
+	"area.agregar.legend": "Ingrese un área",
+	
+	"area.modificar": "Modificar área",
+	"area.modificar.title": "Modificar área",
+	"area.modificar.legend": "Modifique el área",
+	
+	
+	"area.eliminar.confirm.title": "Eliminar Area",
+	"area.eliminar.confirm.msg": "Confirma eliminar el área seleccionado?",
+	
+
+	
+	"area.buscar": "Buscar áreas",
+	"area.buscar.again": "Afinar búsqueda...",
+	
+	"area.oid":"Id",
+	"area.nombre":"Nombre",
+	"area.nombre.required":"Ingrese un Nombre",
+	"area.email":"E-mail",
+	"area.email.required":"Ingrese un E-mail",
+	
+	"reclamo.title": "Listado de Reclamos",
+	"reclamo.agregar": "Agregar un reclamo",
+	"reclamo.agregar.title": "Agregar un reclamo",
+	"reclamo.agregar.legend": "Ingrese un reclamo",
+	
+	"reclamo.modificar": "Modificar reclamo",
+	"reclamo.modificar.title": "Modificar reclamo",
+	"reclamo.modificar.legend": "Modifique el reclamo",
+	
+	
+	"reclamo.eliminar.confirm.title": "Eliminar Reclamo",
+	"reclamo.eliminar.confirm.msg": "Confirma eliminar el reclamo seleccionado?",
+	
+
+	
+	"reclamo.buscar": "Buscar reclamos",
+	"reclamo.buscar.again": "Afinar búsqueda...",
+	
+	"reclamo.oid":"Id",
+	"reclamo.nombre":"Descripción",
+	"reclamo.nombre.required":"Ingrese una Descripción",
+	"reclamo.tipoReclamo":"Tipo",
+	"reclamo.tipoReclamo.required":"Ingrese un Tipo",
+	"reclamo.fecha":"fecha",
+	"reclamo.fecha.required":"Ingrese una Fecha",
+	"reclamo.usuario":"Usuario",
+	"reclamo.estado":"Estado",
+	"reclamo.estado.required":"Ingrese un Estado",
+	"reclamo.direccion":"Dirección",
+	"reclamo.telefono":"Teléfono",
+	"reclamo.telefono.required":"Ingrese un teléfono",
+	"reclamo.suministro":"Suministro",
+	"reclamo.suministro.required":"Ingrese un suministro",
+	
+	
+	"instanciaReclamos.title": "Listado de Instancias de Reclamos",
+	
+	
+
+	
+	"instanciaReclamos.buscar": "Buscar instancias de reclamos",
+	"instanciaReclamos.buscar.again": "Afinar búsqueda...",
+	
+	"instanciaReclamo.oid":"Id",
+	"instanciaReclamo.nombre":"Reclamo",
+	
+	"instanciaReclamo.observaciones":"Observaciones",
+	"instanciaReclamo.desde":"Desde",
+	"instanciaReclamo.hasta":"Hasta",
+	
+	"instanciaReclamo.usuario":"Usuario",
+	"instanciaReclamo.estadoReclamo":"Estado",
+	
+	
+	
+	"tipoReclamo.title": "Listado de Tipos de Reclamos",
+	"tipoReclamo.agregar": "Agregar un tipo de reclamo",
+	"tipoReclamo.agregar.title": "Agregar un tipo de reclamo",
+	"tipoReclamo.agregar.legend": "Ingrese un tipo de reclamo",
+	
+	"tipoReclamo.modificar": "Modificar tipo de reclamo",
+	"tipoReclamo.modificar.title": "Modificar tipo de reclamo",
+	"tipoReclamo.modificar.legend": "Modifique el tipo de reclamo",
+	
+	
+	"tipoReclamo.eliminar.confirm.title": "Eliminar Tipo de Reclamo",
+	"tipoReclamo.eliminar.confirm.msg": "Confirma eliminar el tipo de reclamo seleccionado?",
+	
+
+	
+	"tipoReclamo.buscar": "Buscar tipos de reclamos",
+	"tipoReclamo.buscar.again": "Afinar búsqueda...",
+	
+	"tipoReclamo.oid":"Id",
+	"tipoReclamo.nombre":"Nombre",
+	"tipoReclamo.nombre.required":"Ingrese un Nombre",
+	"tipoReclamo.area":"Area",
+	"tipoReclamo.area.required":"Ingrese un Area",
+	
+	"estadoReclamo.title": "Listado de Estados de Reclamos",
+	"estadoReclamo.agregar": "Agregar un estado de reclamo",
+	"estadoReclamo.agregar.title": "Agregar un estado de reclamo",
+	"estadoReclamo.agregar.legend": "Ingrese un estado de reclamo",
+	
+	"estadoReclamo.modificar": "Modificar estado de reclamo",
+	"estadoReclamo.modificar.title": "Modificar estado de reclamo",
+	"estadoReclamo.modificar.legend": "Modifique el estado de reclamo",
+	
+	
+	"estadoReclamo.eliminar.confirm.title": "Eliminar Estado de Reclamo",
+	"estadoReclamo.eliminar.confirm.msg": "Confirma eliminar el estado de reclamo seleccionado?",
+	
+
+	
+	"estadoReclamo.buscar": "Buscar estados de reclamos",
+	"estadoReclamo.buscar.again": "Afinar búsqueda...",
+	
+	"estadoReclamo.oid":"Id",
+	"estadoReclamo.nombre":"Nombre",
+	"estadoReclamo.nombre.required":"Ingrese un Nombre",
+	"estadoReclamo.orden":"Orden",
+	"estadoReclamo.orden.required":"Ingrese un Orden",
+	
+	
+	"abonado.title": "Listado de Abonados",
+	"abonado.agregar": "Agregar un abonado",
+	"abonado.agregar.title": "Agregar un abonado",
+	"abonado.agregar.legend": "Ingrese un abonado",
+	
+	"abonado.modificar": "Modificar abonado",
+	"abonado.modificar.title": "Modificar abonado",
+	"abonado.modificar.legend": "Modifique el abonado",
+	
+	
+	"abonado.eliminar.confirm.title": "Eliminar Abonado",
+	"abonado.eliminar.confirm.msg": "Confirma eliminar el abonado seleccionado?",
+	
+	"abonado.exportar": "Exportar abonados",
+	
+	"abonado.buscar": "Buscar abonados",
+	"abonado.buscar.again": "Afinar búsqueda...",
+	
+	"abonado.oid":"Id",
+	"abonado.nombre":"Nombre",
+	"abonado.nombre.required":"Ingrese un Nombre",
+	"abonado.apellido":"Apellido / Razón Social",
+	"abonado.apellido.required":"Ingrese un Apellido / Razón Social",
+	"abonado.calle":"Calle",
+	"abonado.numero":"Nro",
+	"abonado.complemento":"Complemento",
+	"abonado.piso":"Piso",
+	"abonado.depto":"Depto",
+	"abonado.telefono":"Teléfono",
+	"abonado.categoria":"Categoría",
+	"abonado.pbx":"PBX",
+	"abonado.domicilio":"Domicilio",
+	
+	"correo.title": "Listado de Abonados",
+	"correo.agregar": "Agregar un E-mail",
+	"correo.agregar.title": "Agregar un E-mail",
+	"correo.agregar.legend": "Ingrese un E-mail",
+	
+	"correo.modificar": "Modificar E-mail",
+	"correo.modificar.title": "Modificar E-mail",
+	"correo.modificar.legend": "Modifique el E-mail",
+	
+	
+	"correo.eliminar.confirm.title": "Eliminar Abonado",
+	"correo.eliminar.confirm.msg": "Confirma eliminar el E-mail seleccionado?",
+	
+	"correo.buscar": "Buscar E-mails",
+	"correo.buscar.again": "Afinar búsqueda...",
+	
+	"correo.oid":"Id",
+	"correo.nombre":"Nombre y Apellido",
+	
+	"correo.email":"E-mail",
+	"correo.email.required":"Ingrese un E-mail válido",
+	"correo.activo":"Activo",
+	
+	"categoria.residencial.label":"Residencial", 
+	"categoria.comercial.label":"Comercial",
+	"categoria.profesional.label":"Profesional",
+	"categoria.gobierno.label":"Gobierno",
+	
+	
+	
+	"necrologicas.title": "Listado de Necrológicas",
+	"necrologica.agregar": "Agregar una necrologica",
+	"necrologica.agregar.title": "Agregar una necrologica",
+	"necrologica.agregar.legend": "Ingrese una necrologica",
+	
+	"necrologica.modificar": "Modificar necrologica",
+	"necrologica.modificar.title": "Modificar necrologica",
+	"necrologica.modificar.legend": "Modifique la necrologica",
+	
+	
+	"necrologica.eliminar.confirm.title": "Eliminar Necrológica",
+	"necrologica.eliminar.confirm.msg": "Confirma eliminar la necrologica seleccionado?",
+	
+	"necrologica.buscar": "Buscar necrologica",
+	"necrologica.buscar.again": "Afinar búsqueda...",
+	
+	"necrologica.oid":"Id",
+	"necrologica.nombre":"Nombre y Apellido",
+	"necrologica.nombre.required":"Ingrese un Nombre y Apellido",
+	"necrologica.fecha":"Fecha",
+	"necrologica.fecha.required":"Ingrese una Fecha",
+	"necrologica.texto":"Texto Descripción General",
+	"necrologica.texto.required":"Ingrese un Texto",
+	
+	"guiaTelefonica.title": "Guía Telefónica",
+	
+	"menu.facturas":"Facturas",
+	"menu.facturas.listar":"Listado de Facturas",
+	
+	"factura.suministro":"Nro de suministro"
+
+}

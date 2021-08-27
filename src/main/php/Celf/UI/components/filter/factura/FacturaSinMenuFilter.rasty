@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\components\filter\factura\FacturaSinMenuFilter" templateLocation="FacturaSinMenuFilter.htm">
+
+	<component id="suministro" type="InputText">
+		<param name="name" value="str:suministro" />
+		<param name="value" value="criteria.suministro" />
+		<param name="placeholder" value="msg:factura.suministro" />
+		
+	</component>
+	
+	
+	
+	
+
+</rasty>

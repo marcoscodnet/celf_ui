@@ -1,0 +1,173 @@
+<rasty-application>
+
+	<!-- declaración de las páginas -->
+	<page name="Login" location="pages/login/Login.page" url="login"/>
+
+	<page name="Abonados"   location="pages/abonados/Abonados.page" url="admin/abonados"/>
+	<page name="AbonadoAgregar"   location="pages/abonados/agregar/AbonadoAgregar.page" url="admin/abonados/agregar"/>
+	<page name="AbonadoModificar"   location="pages/abonados/modificar/AbonadoModificar.page" url="admin/abonados/modificar"/>
+	<page name="AbonadosSinMenu"   location="pages/abonados/AbonadosSinMenu.page" url="guiatelefonica"/>
+	
+	<page name="Correos"   location="pages/correos/Correos.page" url="admin/correos"/>
+	<page name="CorreoAgregar"   location="pages/correos/agregar/CorreoAgregar.page" url="admin/correos/agregar"/>
+	<page name="CorreoModificar"   location="pages/correos/modificar/CorreoModificar.page" url="admin/correos/modificar"/>
+	
+	
+	<page name="Necrologicas"   location="pages/necrologicas/Necrologicas.page" url="admin/necrologicas"/>
+	<page name="NecrologicaAgregar"   location="pages/necrologicas/agregar/NecrologicaAgregar.page" url="admin/necrologicas/agregar"/>
+	<page name="NecrologicaModificar"   location="pages/necrologicas/modificar/NecrologicaModificar.page" url="admin/necrologicas/modificar"/>
+	<page name="NecrologicasSinMenu"   location="pages/necrologicas/NecrologicasSinMenu.page" url="ultimasnecrologicas"/>
+	<page name="FacturasSinMenu"   location="pages/facturas/FacturasSinMenu.page" url="facturas"/>
+	
+	<page name="RegistracionAgregar"   location="pages/registracion/agregar/RegistracionAgregar.page" url="registracion"/>
+	<page name="RegistracionAgregarSuccess"   location="pages/registracion/agregar/RegistracionAgregarSuccess.page" url="registracion/success"/>
+	<page name="RegistracionConfirmar"   location="pages/registracion/confirmar/RegistracionConfirmar.page" url="registracion/validar"/>
+	<page name="RegistracionConfirmarSuccess"   location="pages/registracion/confirmar/RegistracionConfirmarSuccess.page" url="registracion/validar/success"/>
+	
+	<page name="NuevaClaveSolicitar"   location="pages/usuarios/recuperarClave/NuevaClaveSolicitar.page" url="clave/solicitar"/>
+	<page name="NuevaClaveSolicitarSuccess"   location="pages/usuarios/recuperarClave/NuevaClaveSolicitarSuccess.page" url="clave/solicitar/success"/>
+	<page name="NuevaClaveConfirmar"   location="pages/usuarios/recuperarClave/NuevaClaveConfirmar.page" url="clave/confirmar"/>
+	<page name="NuevaClaveConfirmarSuccess"   location="pages/usuarios/recuperarClave/NuevaClaveConfirmarSuccess.page" url="clave/confirmar/success"/>
+	
+	<page name="Areas"   location="pages/areas/Areas.page" url="admin/areas"/>
+	<page name="AreaAgregar"   location="pages/areas/agregar/AreaAgregar.page" url="admin/areas/agregar"/>
+	<page name="AreaModificar"   location="pages/areas/modificar/AreaModificar.page" url="admin/areas/modificar"/>
+	
+	<page name="TipoReclamos"   location="pages/tipoReclamos/TipoReclamos.page" url="admin/tipoReclamos"/>
+	<page name="TipoReclamoAgregar"   location="pages/tipoReclamos/agregar/TipoReclamoAgregar.page" url="admin/tipoReclamos/agregar"/>
+	<page name="TipoReclamoModificar"   location="pages/tipoReclamos/modificar/TipoReclamoModificar.page" url="admin/tipoReclamos/modificar"/>
+	
+	<page name="EstadoReclamos"   location="pages/estadoReclamos/EstadoReclamos.page" url="admin/estadoReclamos"/>
+	<page name="EstadoReclamoAgregar"   location="pages/estadoReclamos/agregar/EstadoReclamoAgregar.page" url="admin/estadoReclamos/agregar"/>
+	<page name="EstadoReclamoModificar"   location="pages/estadoReclamos/modificar/EstadoReclamoModificar.page" url="admin/estadoReclamos/modificar"/>
+	
+	<page name="Reclamos"   location="pages/reclamos/Reclamos.page" url="admin/reclamos"/>
+	<page name="ReclamoAgregar"   location="pages/reclamos/agregar/ReclamoAgregar.page" url="admin/reclamos/agregar"/>
+	<page name="ReclamoModificar"   location="pages/reclamos/modificar/ReclamoModificar.page" url="admin/reclamos/modificar"/>
+	
+	<page name="ReclamosSinMenu"   location="pages/reclamos/ReclamosSinMenu.page" url="reclamos"/>
+	<page name="ReclamoSinMenuAgregar"   location="pages/reclamos/agregar/ReclamoSinMenuAgregar.page" url="reclamos/agregar"/>
+	
+	<page name="InstanciaReclamos"   location="pages/instanciaReclamos/InstanciaReclamos.page" url="admin/instanciaReclamos"/>
+
+	<!-- declaración de los componentes -->
+	<component name="HeaderNav" location="components/header" />
+	<component name="HeaderNavMetro" location="components/header" />
+	
+	<component name="FooterCelf" location="components/footer" />
+	
+	
+	<!-- forms -->
+	
+	<component name="AreaForm"   location="components/form/area"/>
+	<component name="TipoReclamoForm"   location="components/form/tipoReclamo"/>
+	<component name="ReclamoForm"   location="components/form/reclamo"/>
+	<component name="EstadoReclamoForm"   location="components/form/estadoReclamo"/>
+	
+	<component name="AbonadoForm"   location="components/form/abonado"/>
+	<component name="CorreoForm"   location="components/form/correo"/>
+	<component name="NecrologicaForm"   location="components/form/necrologica"/>
+	
+	<component name="RegistracionForm"   location="components/form/registracion"/>
+	
+	<component name="RegistracionConfirmarForm"   location="components/form/registracion"/>
+	
+	<component name="NuevaClaveConfirmarForm"   location="components/form/usuario"/>
+	
+	<component name="ReclamoSinMenuForm"   location="components/form/reclamo"/>
+	
+	
+	<!-- grids -->
+	<component name="Areas" location="components/grid/entitygrid/area" />
+	<component name="TipoReclamos" location="components/grid/entitygrid/tipoReclamo" />
+	<component name="Reclamos" location="components/grid/entitygrid/reclamo" />
+	<component name="EstadoReclamos" location="components/grid/entitygrid/estadoReclamo" />
+	<component name="InstanciaReclamos" location="components/grid/entitygrid/instanciaReclamo" />
+	
+	
+	<component name="GuiaTelefonica" location="components/grid/entitygrid/abonado" />
+	<component name="UltimasNecrologicas" location="components/grid/entitygrid/necrologica" />
+	<component name="Facturas" location="components/grid/entitygrid/factura" />
+	
+	<component name="Reclamos" location="components/grid/entitygrid/reclamo" />
+	
+	<!-- filters -->
+	
+	<component name="AreaFilter"   location="components/filter/area"/>
+	<component name="TipoReclamoFilter"   location="components/filter/tipoReclamo"/>
+	<component name="ReclamoFilter"   location="components/filter/reclamo"/>
+	<component name="EstadoReclamoFilter"   location="components/filter/estadoReclamo"/>
+	<component name="InstanciaReclamoFilter"   location="components/filter/instanciaReclamo"/>
+	
+	<component name="AbonadoFilter"   location="components/filter/abonado"/>
+	<component name="AbonadoSinMenuFilter"   location="components/filter/abonado"/>
+	<component name="CorreoFilter"   location="components/filter/correo"/>
+	<component name="NecrologicaFilter"   location="components/filter/necrologica"/>
+	<component name="NecrologicaSinMenuFilter"   location="components/filter/necrologica"/>
+	<component name="FacturaSinMenuFilter"   location="components/filter/factura"/>
+	
+	<component name="ReclamoSinMenuFilter"   location="components/filter/reclamo"/>
+	
+									
+	<!-- layouts -->
+	<component name="CelfMetroLayout" location="layouts" />
+	<component name="CelfLoginMetroLayout" location="layouts" />
+	<component name="CelfHomeMetroLayout" location="layouts" />
+	<component name="CelfMetroSinMenuLayout" location="layouts" />
+	<component name="CelfMetroGuiaTelefonicaLayout" location="layouts" />
+	<component name="RastySecurityLayout" location="layouts" />
+	<component name="RastyCatalogoLayout" location="layouts" />
+	<component name="CelfPublicLayout" location="layouts" />
+	
+	<!-- declaración de las actions -->
+	<action name="Login" class="Celf\UI\actions\login\Login" url="login"/>
+	<action name="Logout" class="Celf\UI\actions\login\Logout" url="logout"/>
+
+	
+	<action name="AgregarArea" class="Celf\UI\actions\areas\AgregarArea" url="admin/areas/agregar"/>
+	<action name="ModificarArea" class="Celf\UI\actions\areas\ModificarArea" url="admin/areas/modificar"/>
+	<action name="EliminarArea" class="Celf\UI\actions\areas\EliminarArea" url="admin/areas/eliminar"/>
+	
+	<action name="AgregarTipoReclamo" class="Celf\UI\actions\tipoReclamos\AgregarTipoReclamo" url="admin/tipoReclamos/agregar"/>
+	<action name="ModificarTipoReclamo" class="Celf\UI\actions\tipoReclamos\ModificarTipoReclamo" url="admin/tipoReclamos/modificar"/>
+	<action name="EliminarTipoReclamo" class="Celf\UI\actions\tipoReclamos\EliminarTipoReclamo" url="admin/tipoReclamos/eliminar"/>
+	
+	<action name="AgregarReclamo" class="Celf\UI\actions\reclamos\AgregarReclamo" url="admin/reclamos/agregar"/>
+	<action name="ModificarReclamo" class="Celf\UI\actions\reclamos\ModificarReclamo" url="admin/reclamos/modificar"/>
+	<action name="EliminarReclamo" class="Celf\UI\actions\reclamos\EliminarReclamo" url="admin/reclamos/eliminar"/>
+		
+	
+	<action name="AgregarEstadoReclamo" class="Celf\UI\actions\estadoReclamos\AgregarEstadoReclamo" url="admin/estadoReclamos/agregar"/>
+	<action name="ModificarEstadoReclamo" class="Celf\UI\actions\estadoReclamos\ModificarEstadoReclamo" url="admin/estadoReclamos/modificar"/>
+	<action name="EliminarEstadoReclamo" class="Celf\UI\actions\estadoReclamos\EliminarEstadoReclamo" url="admin/estadoReclamos/eliminar"/>
+	
+	
+	<action name="AgregarAbonado" class="Celf\UI\actions\abonados\AgregarAbonado" url="admin/abonados/agregar"/>
+	<action name="ModificarAbonado" class="Celf\UI\actions\abonados\ModificarAbonado" url="admin/abonados/modificar"/>
+	<action name="EliminarAbonado" class="Celf\UI\actions\abonados\EliminarAbonado" url="admin/abonados/eliminar"/>
+	<action name="ExportarAbonado" class="Celf\UI\actions\abonados\ExportarAbonado" url="admin/abonados/exportar"/>
+	
+	<action name="AgregarCorreo" class="Celf\UI\actions\correos\AgregarCorreo" url="admin/correos/agregar"/>
+	<action name="ModificarCorreo" class="Celf\UI\actions\correos\ModificarCorreo" url="admin/correos/modificar"/>
+	<action name="EliminarCorreo" class="Celf\UI\actions\correos\EliminarCorreo" url="admin/correos/eliminar"/>
+	
+	
+	<action name="AgregarNecrologica" class="Celf\UI\actions\necrologicas\AgregarNecrologica" url="admin/necrologicas/agregar"/>
+	<action name="ModificarNecrologica" class="Celf\UI\actions\necrologicas\ModificarNecrologica" url="admin/necrologicas/modificar"/>
+	<action name="EliminarNecrologica" class="Celf\UI\actions\necrologicas\EliminarNecrologica" url="admin/necrologicas/eliminar"/>
+
+	
+	
+	<action name="findEntities" class="Celf\UI\actions\common\ListarEntitiesJson" url="findEntities"/>
+	<action name="findEntity" class="Celf\UI\actions\common\GetEntityJson" url="findEntity"/>
+
+	
+	<action name="AgregarRegistracion" class="Celf\UI\actions\registracion\AgregarRegistracion" url="registracion/nueva"/>
+	<action name="ConfirmarRegistracion" class="Celf\UI\actions\registracion\ConfirmarRegistracion" url="registracion/confirmar"/>
+	<action name="LoginRegistracion" class="Celf\UI\actions\registracion\LoginRegistracion" url="registracion/login"/>
+	
+	<action name="SolicitarNuevaClave" class="Celf\UI\actions\usuarios\SolicitarNuevaClave" url="clave/solicitar"/>
+	<action name="ConfirmarNuevaClave" class="Celf\UI\actions\usuarios\ConfirmarNuevaClave" url="clave/confirmar"/>
+	
+		
+</rasty-application>

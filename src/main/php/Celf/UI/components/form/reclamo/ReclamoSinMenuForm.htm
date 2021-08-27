@@ -1,0 +1,85 @@
+<!-- BEGIN:main -->
+
+
+<script>
+
+$(function() {
+
+	$("#codigo").focus();
+	
+});
+</script>
+
+
+<div class="fusion-page-title-bar fusion-page-title-bar-none fusion-page-title-bar-left">
+	<div class="fusion-page-title-row">
+		<div class="fusion-page-title-wrapper">
+			<div class="fusion-page-title-captions">
+
+																			<h1 class="entry-title">Iniciar Reclamo</h1>
+
+									
+				
+			</div>
+
+										
+		</div>
+	</div>
+</div>
+<div >
+<form class="cuentas_form" id="reclamo_form" onsubmit="return validate('reclamo_form');" action="{action}" method="{method}">
+
+		<fieldset>
+		
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		<div class="row">
+			
+				<div class="item" style="width: 500px;margin-left:5%;text-align:left;">
+				    <label for="tipoReclamo">{lbl_tipoReclamo}:</label>
+				    <rasty id="tipoReclamo" />
+				</div>
+				<div class="item" style="width: 200px;margin-left:5%;text-align:left;">
+				    <label for="suministro">{lbl_suministro}:</label>
+				    <rasty id="suministro" />
+				</div>
+			
+				<div class="item" style="width: 200px;margin-left:5%;text-align:left;">
+				    <label for="telefono">{lbl_telefono}:</label>
+				    <rasty id="telefono" />
+				</div>
+				<div class="item" style="width: 500px;margin-left:5%;text-align:left;">
+				    <label for="nombre">{lbl_nombre}:</label>
+				    <rasty id="nombre" />
+				</div>
+			
+			
+				    <rasty id="estadoReclamo" />
+			
+			
+		</div>
+		
+
+		
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+		<br>
+		<button type="button" style="margin-left:5%;" class="wpcf7-form-control wpcf7-submit"  id="input_submit" onclick="javascript: submitFormulario('reclamo_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  class="wpcf7-form-control wpcf7-submit" id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\necrologicas\agregar\NecrologicaAgregar" templateLocation="pages/necrologicas/agregar/NecrologicaAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="necrologicaForm" type="NecrologicaForm">
+		<param name="legend" value="msg:necrologica.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarNecrologica" />
+		<param name="method" value="str:post" />
+		<param name="necrologica" value="necrologica" />
+	</component>
+	
+</rasty>

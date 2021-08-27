@@ -1,0 +1,5 @@
+<rasty specificationClass="Celf\UI\layouts\CelfLoginMetroLayout" templateLocation="CelfLoginMetroLayout.htm">
+
+	<component id="footer" type="FooterLpnkf">
+	</component>
+</rasty>

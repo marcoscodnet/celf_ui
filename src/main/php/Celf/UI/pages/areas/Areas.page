@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\areas\Areas" templateLocation="pages/areas/Areas.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="areasFilter" type="AreaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:area.buscar" />
+		<param name="legendAgain" value="msg:area.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

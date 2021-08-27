@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\facturas\FacturasSinMenu" templateLocation="pages/facturas/FacturasSinMenu.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroSinMenuLayout" />
+
+	<component id="facturasFilter" type="FacturaSinMenuFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:factura.buscar" />
+		<param name="legendAgain" value="msg:factura.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

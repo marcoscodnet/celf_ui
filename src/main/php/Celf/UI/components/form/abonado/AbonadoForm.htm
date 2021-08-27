@@ -1,0 +1,86 @@
+<!-- BEGIN:main -->
+
+
+<script>
+
+$(function() {
+
+	$("#codigo").focus();
+	
+});
+</script>
+
+<div>
+<form class="cuentas_form" id="abonado_form" onsubmit="return validate('abonado_form');" action="{action}" method="{method}">
+
+		<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		
+		
+		<div class="item">
+		    <label for="apellido">{lbl_apellido} *:</label>
+		    <rasty id="apellido" />
+		</div>
+		<div class="item">
+		    <label for="nombre">{lbl_nombre}:</label>
+		    <rasty id="nombre" />
+		</div>
+		<div class="item">
+		    <label for="calle">{lbl_calle}:</label>
+		    <rasty id="calle" />
+		</div>
+		<div class="item">
+		    <label for="numero">{lbl_numero}:</label>
+		    <rasty id="numero" />
+		</div>
+		<div class="item">
+		    <label for="complemento">{lbl_complemento}:</label>
+		    <rasty id="complemento" />
+		</div>
+		<div class="item">
+		    <label for="piso">{lbl_piso}:</label>
+		    <rasty id="piso" />
+		</div>
+		<div class="item">
+		    <label for="depto">{lbl_depto}:</label>
+		    <rasty id="depto" />
+		</div>
+		<div class="item">
+		    <label for="telefono">{lbl_telefono}:</label>
+		    <rasty id="telefono" />
+		</div>
+		<div class="item">
+		    <label for="categoria">{lbl_categoria}:</label>
+		    <rasty id="categoria" />
+		</div>
+		<div class="item">
+		    <label for="pbx">{lbl_pbx}:</label>
+		    <rasty id="pbx" />
+		</div>
+		
+
+		
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+	
+		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('abonado_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

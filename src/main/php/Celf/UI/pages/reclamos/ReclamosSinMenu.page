@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\reclamos\ReclamosSinMenu" templateLocation="pages/reclamos/ReclamosSinMenu.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroGuiaTelefonicaLayout" />
+
+	<component id="reclamosFilter" type="ReclamoSinMenuFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:reclamo.buscar" />
+		<param name="legendAgain" value="msg:reclamo.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

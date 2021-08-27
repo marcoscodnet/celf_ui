@@ -1,0 +1,80 @@
+<!-- BEGIN:main -->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+
+
+
+
+<script>
+
+$(function() {
+
+	$("#nombre").focus();
+	
+});
+</script>
+
+<div>
+<form class="cuentas_form" id="necrologica_form" onsubmit="return validate('necrologica_form');" action="{action}" method="{method}">
+
+		<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		
+				<div class="item">
+				    <label for="nombre">{lbl_nombre} *:</label>
+				    <rasty id="nombre" />
+				</div>
+			
+			
+				<div class="item">
+				    <label for="fecha">{lbl_fecha} *:</label>
+				    <rasty id="fecha" />
+				</div>
+				
+				<div class="item">
+				    <label for="texto">{lbl_texto} *:</label>
+				    <rasty id="texto" />
+				</div>
+			
+		
+		
+
+		
+
+		
+
+		
+		
+		
+
+		
+		
+
+		
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+	
+		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('necrologica_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

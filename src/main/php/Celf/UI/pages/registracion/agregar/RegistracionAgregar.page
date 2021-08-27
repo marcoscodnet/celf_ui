@@ -1,0 +1,19 @@
+<rasty specificationClass="Celf\UI\pages\registracion\agregar\RegistracionAgregar" templateLocation="pages/registracion/agregar/RegistracionAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfPublicLayout" />
+	
+
+	
+	
+	<component id="registracionForm" type="RegistracionForm">
+		<param name="legend" value="msg:registracion.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarRegistracion" />
+		<param name="method" value="str:post" />
+		<param name="registracion" value="registracion" />
+	</component>
+
+
+		
+</rasty>

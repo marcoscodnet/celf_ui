@@ -1,0 +1,17 @@
+<rasty specificationClass="Celf\UI\pages\registracion\confirmar\RegistracionConfirmar" templateLocation="pages/registracion/confirmar/RegistracionConfirmar.htm"> 
+
+	<param name="layoutType" value="str:CelfPublicLayout" />
+	<param name="codigoValidacion" value="get:codigoValidacion" />
+
+	
+	
+	<component id="registracionConfirmarForm" type="RegistracionConfirmarForm">
+		<param name="legend" value="msg:registracion.confirmar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionConfirmarRegistracion" />
+		<param name="method" value="str:post" />
+		<param name="registracion" value="registracion" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\areas\agregar\AreaAgregar" templateLocation="pages/areas/agregar/AreaAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="areaForm" type="AreaForm">
+		<param name="legend" value="msg:area.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarArea" />
+		<param name="method" value="str:post" />
+		<param name="area" value="area" />
+	</component>
+	
+</rasty>

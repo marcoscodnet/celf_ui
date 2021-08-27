@@ -1,0 +1,6 @@
+<rasty specificationClass="Celf\UI\pages\usuarios\recuperarClave\NuevaClaveSolicitarSuccess" templateLocation="pages/usuarios/recuperarClave/NuevaClaveSolicitarSuccess.htm"> 
+
+	<param name="layoutType" value="str:CelfPublicLayout" />
+	<param name="username" value="get:username" />
+
+</rasty>

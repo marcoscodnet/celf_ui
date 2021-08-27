@@ -1,0 +1,154 @@
+<!-- BEGIN:main -->
+<script>
+
+function submitBuscarSinSeguridad(webpath, filterId, resultId){
+	//alert(filterId+' '+resultId);
+	var formData = $( filterId ).serialize();
+	
+	//$( resultId ).fadeTo("fast", 0.33);
+	right = ($(window).width() / 2) - (32);		
+	htmlSearching = "<div style='position:absolute; right:" + right + "px;top:40px;'><img src='" + webpath + "/css/images/loading.gif' /></div>";
+	$( resultId ).html($( resultId ).html() + htmlSearching);
+		
+	$.ajax({
+		  url: webpath + "GuiaTelefonica.rasty",
+		  type: "POST",
+		  data: formData,
+		  cache: false,
+		  success: function(content){
+		    
+			$( resultId ).html(content);
+			//$( resultId ).fadeTo("fast", 1);
+			
+		  }
+		});	
+}
+
+
+function submitBuscarAbonados(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarAbonados();
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+}
+
+function ordenarAbonados(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+}
+
+function paginarAbonados(page){
+	$( "#page" ).val(page);
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarAbonado(event, abonadoId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el abonado */
+	
+	gotoLink("{linkSeleccionar}?oid="+abonadoId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscarSinSeguridad("{WEB_PATH}", "#abonados_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+
+<div id="divAbonados{id}Toggle2">
+<div class="fusion-page-title-bar fusion-page-title-bar-none fusion-page-title-bar-left">
+	<div class="fusion-page-title-row">
+		<div class="fusion-page-title-wrapper">
+			<div class="fusion-page-title-captions">
+
+																			<h1 class="entry-title">Gu&iacute;a Telef&oacute;nica</h1>
+
+									
+				
+			</div>
+
+										
+		</div>
+	</div>
+</div>
+<form class="cuentas_form" id="abonados_filter{id}">
+
+		
+	
+	<fieldset>
+		
+				
+	<div class="criteria_left">
+		<div class="item" style="width: 50%;">
+		    <label for="apellido">{lbl_apellido}:</label>
+	    	<rasty id="apellido" />
+		</div>
+		
+		<div class="item" style="width: 50%;">
+		    <label for="nombre">{lbl_nombre}:</label>
+	    	<rasty id="nombre" />
+		</div>
+	</div>
+	<div class="criteria_right">
+		<div class="item" style="width: 50%;">
+		    <label for="calle">{lbl_calle}:</label>
+	    	<rasty id="calle" />
+		</div>
+		<div class="item" style="width: 50%;">
+		    <label for="telefono">{lbl_telefono}:</label>
+	    	<rasty id="telefono" />
+		</div>
+	</div>	
+		
+	</fieldset>
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarAbonados">
+	<input type="hidden" name="paginationCallback" value="paginarAbonados">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy">
+	<input type="hidden" id="orderByType" name="orderByType" value="ASC">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+	
+		<button id="input_submit_ajax_Abonado{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscarSinSeguridad('{WEB_PATH}', '#abonados_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+		
+		
+		
+		
+		
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

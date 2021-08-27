@@ -1,0 +1,330 @@
+<!-- BEGIN: main-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>{title}</title>
+
+<link href="{WEB_PATH}css/images/favicon.png" type="image/png" rel="icon">
+
+<!-- BEGIN: meta_tag -->
+<meta http-equiv='{http_equiv}' content='{meta_content}'  name='{name}'/>
+<!-- END: meta_tag -->
+
+<!–[if lt IE 9]>
+<script src="{WEB_PATH}js/css3-mediaqueries.js"></script>
+<![endif]–>
+
+<!-- BEGIN: style -->
+<link rel="stylesheet" href="{css}" type="text/css" />
+<!-- END: style -->
+
+
+<!-- BEGIN: link -->
+<link rel="{rel}" href="{href}" type="{type}" />
+<!-- END: link -->
+
+<!-- BEGIN: script -->
+<script language="javascript" src="{js}"></script>
+<!-- END: script -->
+<style type="text/css">
+body {
+    font-size: 80%;
+}
+html, body, * {
+    -moz-box-sizing: border-box;
+}
+.rasty .pagination_btn{
+	cursor: pointer; 
+	display: inline;
+}
+.rasty a, .rasty a:link, .rasty a:visited, .rasty a:active {
+    color: #235A81;
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
+</style>
+<script type="text/javascript">
+
+function showInfoMessage( msg, hide ){
+	$( "#layout_info_message" ).html( msg );
+	updated_right = ($(window).width() / 2) - ($( "#layout_info" ).width()/2);
+	$( "#layout_info" ).css({'right': updated_right});
+	
+	if( hide )
+		$( "#layout_info" ).show().delay(4000).slideUp(300);
+	else
+		$( "#layout_info" ).show();
+}
+
+function showErrorMessage( msg, hide ){
+
+	
+
+	$( "#layout_error_message" ).html( msg );
+	updated_right = ($(window).width() / 2) - ($( "#layout_error" ).width()/2);
+	$( "#layout_error" ).css({'right': updated_right});
+
+	updated_top = ($(window).height() / 2) - ($( "#layout_error" ).height()/2);
+	$( "#layout_error" ).css({'top': updated_top});
+	
+	if( hide )
+		$( "#layout_error" ).show().delay(4000).slideUp(300);
+	else
+		$( "#layout_error" ).show();
+
+}
+
+</script>
+</head>
+<body class="rasty metro">
+
+  
+
+<div id="layout_info" class="ui-state-highlight ui-corner-all" style="display:none;position:absolute; right:50%; top:0px;margin: 10px;padding: 6pt .7em;"> 
+	<p>
+	<span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+	<span id="layout_info_message"></span>
+	</p>
+</div>
+<div id="layout_error" class="ui-state-error ui-corner-all" style="z-index:10000;display:none;position:absolute; right:50%; top:0px;margin: 10px;padding: 6pt .7em;"> 
+	<p>
+	<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+	<span id="layout_error_message"></span>
+	</p>
+</div>
+<table width="790" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="3" valign="top"> 
+      <div align="left">
+        <table width="790"  border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="790" height="107" valign="top" bgcolor="#FFFFFF"> 
+              <div align="left"><img src="img/celf-web-portada.jpg" width="790" height="107"></div></td>
+          </tr>
+          <tr> 
+            <td  height="1" colspan="2" valign="top"  background="img/bg_grischico.jpg"><font color="#0000FF"><img src="img/sspazio.gif" height="2" ></font></td>
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+  <tr> 
+    <td valign="top"> 
+      <div align="center"> 
+        <table width="790" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+          <tr valign="top"> 
+            <td width="167" rowspan="2" bgcolor="#E0E0E0"> <table width="167" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tr> 
+                  <td height="29" valign="middle" bgcolor="#288ED5"> <div align="center"> 
+                      <img src="img/menu.gif" width="128" height="28"></div></td>
+                </tr>
+                <tr> 
+                  <td width="167"  height="2" valign="top" bgcolor="#FFFFFF"> 
+                    <table border="0" cellspacing="0" cellpadding="12">
+                      <tr> 
+                        <td valign="top" background="img/linea_gris.jpg"> <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"><span class="linkmenu"> 
+                          <a href="index.htm" class="linkmenu">&nbsp;Principal</a></span></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="institucional.htm" class="linkmenu">&nbsp;Institucional</a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="servicios.htm" class="linkmenu">&nbsp;Servicios</a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="futurtel.htm" class="linkmenu">&nbsp;Futurtel</a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="noticias.htm" class="linkmenu">&nbsp;Noticias</a></strong></font>	
+						  <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="resoluciones.htm" class="linkmenu">&nbsp;Resoluciones</a></strong></font>						  
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="sitiosdeinteres.htm" class="linkmenu">&nbsp;Sitios 
+                          de inter&eacute;s</a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+                          <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="atencionalcliente.htm" class="linkmenu">&nbsp;Atenci&oacute;n 
+                          al cliente</a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+						  <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="guiatelefonica.php" class="linkmenu">&nbsp;Gu&iacute;a 
+                          Telef&oacute;nica</a></strong></font>
+						  <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+						  <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="necrologicas-las-flores.htm" class="linkmenu">&nbsp;Necrol&oacute;gicas</a></strong></font> <font><strong><a href="necrologicas-las-flores.htm"><img src="img/new.jpg" width="38" height="18" align="absmiddle" border="0"></a></strong></font> 
+                          <table width="150" border="0" cellspacing="3" cellpadding="0">
+                            <tr> 
+                              <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                            </tr>
+                          </table>
+						  <font><strong><img src="img/boto_flechi.gif" width="15" height="15" align="absmiddle"> 
+                          <a href="contacto.htm" class="linkmenu">&nbsp;Contacto</a></strong></font> 
+
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+			  <tr>
+                <td height="100" valign="top" bgcolor="#E0E0E0"><table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td valign="top" bgcolor="#E0E0E0"> <div align="center"><a href="documentos/celf-memoria-2014-10-13.pdf" target="_blank"><img src="img/informe-insitucional-celf.jpg" alt="Informe Institucional CELF - Asamblea general - Memoria" width="160" height="94" longdesc="Informe Institucional CELF - Asamblea general - Memoria"></a></div>
+						</td>
+                    </tr>
+                </table></td>
+              </tr>              
+              <tr bgcolor="#E0E0E0">
+                <td height="250" valign="top" bgcolor="#E0E0E0"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td valign="top" class="t11">
+                          <strong><font color="#003366"><a href="informes-institucionales.htm" target="_self">Informes anteriores</a></font></strong><br>
+						  <font color="#990000"><strong><font color="#003366" size="2"><br>
+						<br>								
+						  Nuestra 
+                          Misi&oacute;n </font></strong></font><font color="#003366"><br>
+                          <br>
+                          &#8220;Prestar los mejores servicios a los m&iacute;nimos 
+                          costos posibles, para beneficio de la totalidad de los 
+                          asociados, afirmando los valores cooperativos de democracia, igualdad, 
+                          equidad y solidaridad; sosteniendo los valores &eacute;ticos 
+                          de honestidad, responsabilidad social y preocupaci&oacute;n 
+                        por los dem&aacute;s&#8221;.</font><br>
+						<br>
+                      </td>                      
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*">	  
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>      
+			  </tr>    			  
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*"><table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td valign="top" class="t11"> <div align="center"><font color="#990000"><strong><a href="http://www.oceba.gba.gov.ar/" target="_blank"><img src="img/oceba.jpg" title="Link a OCEBA" alt="OCEBA" width="150" height="39" border="0" align="absmiddle"></a><font color="#003366" size="2"> 
+                        </font></strong></font></div></td>
+                      
+                    </tr>
+                </table></td>
+              </tr>          
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*">	  
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>      
+			  </tr>
+
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*"><table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td valign="top" class="t11"> <div align="center"><font color="#990000"><strong>
+						<img src="img/secretaria-servicios-publicos.gif" title="Secretaria Servicios Publicos" alt="Secretaria Servicios Publicos" width="150" height="58" border="0" align="absmiddle"></div></td>
+                      
+                    </tr>
+                </table></td>
+              </tr>          
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*">	  
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>      
+			  </tr>				  
+			  
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*"><table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td valign="top" class="t11"> <div align="center"><font color="#990000"><strong><a href="pagocoop.htm" target="_self"><img src="img/pagocoop.gif" title="Link a PAGOCOOP" alt="PAGOCOOP" width="150" height="58" border="0" align="absmiddle"></a><font color="#003366" size="2"> 
+                        </font></strong></font></div></td>
+                      
+                    </tr>
+                </table></td>
+              </tr>          
+              <tr>
+                <td valign="top" bgcolor="#E0E0E0" height="*">	  
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td background="img/punto.gif" class="t9"><font color="#CC3366"><img src="punto_transparente.gif" width="2" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>      
+			  </tr>                  
+
+              </table></td>
+            <td width="616" height="50" valign="top"><table width="616" border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                  <td  colspan="2" width="616" valign="top" bgcolor="#FFFFFF"><img src="img/rotulo_guia.gif" width="616" height="48"></td>
+                </tr>
+             
+              </table></td>
+					</tr>
+          <tr valign="top"> 
+            <td valign="top"><table border="0" cellpadding="0" cellspacing="0">
+							<tr> 
+								<td valign="top"> <table border="0" cellpadding="0" cellspacing="0">
+									<tr> 
+										<td width="616" valign="top"> 	
+{page}
+</td>
+              </tr>								
+	          </table></td>
+					</tr>
+      </table>
+      </div></td>
+  </tr>
+  <tr> 
+    <td height="2" valign="top" bgcolor="#FFFFFF"> 
+      <div align="center"></div></td>
+  </tr>
+</table>
+
+</body>
+</html>
+<!-- END: main-->

@@ -1,0 +1,16 @@
+<rasty specificationClass="Celf\UI\pages\necrologicas\modificar\NecrologicaModificar" templateLocation="pages/necrologicas/modificar/NecrologicaModificar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+	<param name="necrologicaOid" value="get:oid" />
+
+
+	<component id="necrologicaForm" type="NecrologicaForm">
+		<param name="legend" value="msg:necrologica.modificar.legend" />
+		<param name="action" value="linkActionModificarNecrologica" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="necrologica" value="necrologica" />
+	</component>
+	
+</rasty>

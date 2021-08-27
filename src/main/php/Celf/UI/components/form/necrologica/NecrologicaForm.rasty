@@ -1,0 +1,54 @@
+<rasty specificationClass="Celf\UI\components\form\necrologica\NecrologicaForm" templateLocation="NecrologicaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="necrologica.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="necrologica.nombre" />
+		<param name="requiredMessage" value="msg:necrologica.nombre.required" />
+		<param name="placeholder" value="msg:necrologica.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="necrologica.fecha" />
+		<param name="placeholder" value="msg:necrologica.fecha" />
+		<param name="requiredMessage" value="msg:necrologica.fecha.required" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	<component id="texto" type="InputTextArea">
+		<param name="inputId" value="str:texto" />
+		<param name="name" value="str:texto" />
+		<param name="value" value="necrologica.texto" />
+		<param name="placeholder" value="msg:necrologica.texto" />	
+		<param name="requiredMessage" value="msg:necrologica.texto.required" />
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</rasty>

@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\correos\agregar\CorreoAgregar" templateLocation="pages/correos/agregar/CorreoAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="correoForm" type="CorreoForm">
+		<param name="legend" value="msg:correo.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarCorreo" />
+		<param name="method" value="str:post" />
+		<param name="correo" value="correo" />
+	</component>
+	
+</rasty>

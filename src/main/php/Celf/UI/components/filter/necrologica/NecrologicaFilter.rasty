@@ -1,0 +1,26 @@
+<rasty specificationClass="Celf\UI\components\filter\necrologica\NecrologicaFilter" templateLocation="NecrologicaFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:necrologica.nombre" />
+		
+	</component>
+
+	<component id="fechaDesde" type="InputDate">
+		<param name="inputId" value="str:fechaDesde" />
+		<param name="name" value="str:fechaDesde" />
+		<param name="value" value="criteria.fechaDesde" />
+		<param name="placeholder" value="msg:criteria.fechaDesde" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+	<component id="fechaHasta" type="InputDate">
+		<param name="inputId" value="str:fechaHasta" />
+		<param name="name" value="str:fechaHasta" />
+		<param name="value" value="criteria.fechaHasta" />
+		<param name="placeholder" value="msg:criteria.fechaDesde" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+</rasty>

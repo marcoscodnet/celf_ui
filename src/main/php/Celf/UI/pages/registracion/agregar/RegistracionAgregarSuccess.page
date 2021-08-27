@@ -1,0 +1,8 @@
+<rasty specificationClass="Celf\UI\pages\registracion\agregar\RegistracionAgregarSuccess" templateLocation="pages/registracion/agregar/RegistracionAgregarSuccess.htm"> 
+
+	<param name="layoutType" value="str:CelfPublicLayout" />
+	<param name="registracionOid" value="get:oid" />
+
+	
+	
+</rasty>

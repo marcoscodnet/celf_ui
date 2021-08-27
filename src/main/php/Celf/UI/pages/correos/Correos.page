@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\correos\Correos" templateLocation="pages/correos/Correos.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="correosFilter" type="CorreoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:correo.buscar" />
+		<param name="legendAgain" value="msg:correo.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

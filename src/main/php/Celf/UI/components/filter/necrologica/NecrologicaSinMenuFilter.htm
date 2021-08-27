@@ -1,0 +1,103 @@
+<!-- BEGIN:main -->
+<script>
+
+function submitBuscarSinSeguridad(webpath, filterId, resultId){
+
+	var formData = $( filterId ).serialize();
+	
+	//$( resultId ).fadeTo("fast", 0.33);
+	right = ($(window).width() / 2) - (32);		
+	htmlSearching = "<div style='position:absolute; right:" + right + "px;top:40px;'><img src='" + webpath + "/css/images/loading.gif' /></div>";
+	$( resultId ).html($( resultId ).html() + htmlSearching);
+		
+	$.ajax({
+		  url: webpath + "UltimasNecrologicas.rasty",
+		  type: "POST",
+		  data: formData,
+		  cache: false,
+		  success: function(content){
+		    
+			$( resultId ).html(content);
+			//$( resultId ).fadeTo("fast", 1);
+			
+		  }
+		});	
+}
+
+
+function submitBuscarNecrologicas(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarNecrologicas();
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+}
+
+function ordenarNecrologicas(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+}
+
+function paginarNecrologicas(page){
+	$( "#page" ).val(page);
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarNecrologica(event, necrologicaId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el necrologica */
+	
+	gotoLink("{linkSeleccionar}?oid="+necrologicaId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscarSinSeguridad("{WEB_PATH}", "#necrologicas_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+
+<div id="divNecrologicas{id}Toggle2">
+<form class="cuentas_form" id="necrologicas_filter{id}">
+
+		
+	
+	
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarNecrologicas">
+	<input type="hidden" name="paginationCallback" value="paginarNecrologicas">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy">
+	<input type="hidden" id="orderByType" name="orderByType" value="DESC">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+
+</div>
+<!-- END:main -->

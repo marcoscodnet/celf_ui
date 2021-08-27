@@ -1,0 +1,27 @@
+<rasty specificationClass="Celf\UI\components\filter\instanciaReclamo\InstanciaReclamoFilter" templateLocation="InstanciaReclamoFilter.htm">
+
+
+	
+	
+
+	<component id="estadoReclamo" type="InputCombo">
+		<param name="inputId" value="str:estadoReclamo" />
+		<param name="name" value="str:estadoReclamo" />
+		<param name="value" value="criteria.estadoReclamo" />
+		<param name="options" value="estadoReclamos" />
+		<param name="finder" value="estadoReclamoFinderClazz" />
+		<param name="placeholder" value="msg:instanciaReclamo.estadoReclamo" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+	
+	<component id="reclamo" type="InputHidden">
+		<param name="inputId" value="str:reclamo" />
+		<param name="name" value="str:reclamo" />
+		<param name="value" value="criteria.reclamo" />
+	</component>
+	
+	
+	
+
+
+</rasty>

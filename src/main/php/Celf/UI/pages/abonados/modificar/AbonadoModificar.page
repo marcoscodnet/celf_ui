@@ -1,0 +1,16 @@
+<rasty specificationClass="Celf\UI\pages\abonados\modificar\AbonadoModificar" templateLocation="pages/abonados/modificar/AbonadoModificar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+	<param name="abonadoOid" value="get:oid" />
+
+
+	<component id="abonadoForm" type="AbonadoForm">
+		<param name="legend" value="msg:abonado.modificar.legend" />
+		<param name="action" value="linkActionModificarAbonado" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="abonado" value="abonado" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,33 @@
+<rasty specificationClass="Celf\UI\components\filter\abonado\AbonadoSinMenuFilter" templateLocation="AbonadoSinMenuFilter.htm">
+
+	<component id="apellido" type="InputText">
+		<param name="name" value="str:apellido" />
+		<param name="value" value="criteria.apellido" />
+		<param name="placeholder" value="msg:abonado.apellido" />
+		
+	</component>
+	
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:abonado.nombre" />
+		
+	</component>
+	
+	<component id="calle" type="InputText">
+		<param name="name" value="str:calle" />
+		<param name="value" value="criteria.calle" />
+		<param name="placeholder" value="msg:abonado.calle" />
+		
+	</component>
+	
+	<component id="telefono" type="InputText">
+		<param name="name" value="str:telefono" />
+		<param name="value" value="criteria.telefono" />
+		<param name="placeholder" value="msg:abonado.telefono" />
+		
+	</component>
+	
+	
+
+</rasty>

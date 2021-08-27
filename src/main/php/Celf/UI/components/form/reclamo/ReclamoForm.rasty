@@ -1,0 +1,67 @@
+<rasty specificationClass="Celf\UI\components\form\reclamo\ReclamoForm" templateLocation="ReclamoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="reclamo.oid" />
+	</component>
+
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="reclamo.telefono" />
+		<param name="requiredMessage" value="msg:reclamo.telefono.required" />
+		<param name="placeholder" value="msg:reclamo.telefono" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="suministro" type="InputText">
+		<param name="inputId" value="str:suministro" />
+		<param name="name" value="str:suministro" />
+		<param name="value" value="reclamo.suministro" />
+		<param name="requiredMessage" value="msg:reclamo.suministro.required" />
+		<param name="placeholder" value="msg:reclamo.suministro" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+
+	<component id="nombre" type="InputTextArea">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="reclamo.nombre" />
+		<param name="placeholder" value="msg:reclamo.nombre" />	
+		<param name="rows" value="str:2" />	
+		<param name="requiredMessage" value="msg:reclamo.nombre.required" />
+	</component>
+	
+	<component id="tipoReclamo" type="InputCombo">
+		<param name="inputId" value="str:tipoReclamo" />
+		<param name="name" value="str:tipoReclamo" />
+		<param name="value" value="reclamo.tipoReclamo" />
+		<param name="options" value="tipoReclamos" />
+		<param name="finder" value="tipoReclamoFinderClazz" />
+		<param name="requiredMessage" value="msg:reclamo.tipoReclamo.required" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+	
+	
+	
+	<component id="estadoReclamo" type="InputCombo">
+		<param name="inputId" value="str:estadoReclamo" />
+		<param name="name" value="str:estadoReclamo" />
+		<param name="value" value="reclamo.estadoReclamo" />
+		<param name="options" value="estadoReclamos" />
+		<param name="finder" value="estadoReclamoFinderClazz" />
+		<param name="requiredMessage" value="msg:reclamo.estado.required" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+</rasty>

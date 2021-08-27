@@ -1,0 +1,5 @@
+<rasty specificationClass="Celf\UI\layouts\CelfHomeMetroLayout" templateLocation="CelfHomeMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+
+</rasty>

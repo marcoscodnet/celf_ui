@@ -1,0 +1,14 @@
+<rasty specificationClass="Celf\UI\pages\estadoReclamos\agregar\EstadoReclamoAgregar" templateLocation="pages/estadoReclamos/agregar/EstadoReclamoAgregar.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="estadoReclamoForm" type="EstadoReclamoForm">
+		<param name="legend" value="msg:estadoReclamo.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarEstadoReclamo" />
+		<param name="method" value="str:post" />
+		<param name="estadoReclamo" value="estadoReclamo" />
+	</component>
+	
+</rasty>

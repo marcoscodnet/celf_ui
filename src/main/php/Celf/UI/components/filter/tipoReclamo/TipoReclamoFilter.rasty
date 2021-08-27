@@ -1,0 +1,20 @@
+<rasty specificationClass="Celf\UI\components\filter\tipoReclamo\TipoReclamoFilter" templateLocation="TipoReclamoFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:tipoReclamo.nombre" />
+		
+	</component>
+	
+	<component id="area" type="InputCombo">
+		<param name="inputId" value="str:area" />
+		<param name="name" value="str:area" />
+		<param name="value" value="criteria.area" />
+		<param name="options" value="areas" />
+		<param name="finder" value="areaFinderClazz" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+
+
+</rasty>

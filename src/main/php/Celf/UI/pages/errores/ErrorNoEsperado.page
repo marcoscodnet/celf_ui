@@ -1,0 +1,6 @@
+<rasty specificationClass="Celf\UI\pages\errores\ErrorNoEsperado" templateLocation="pages/errores/ErrorNoEsperado.htm">  
+
+	<param name="layoutType" value="str:CelfErrorLayout" />
+	<param name="mensaje" value="get:error" />
+
+</rasty>

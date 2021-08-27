@@ -1,0 +1,23 @@
+<rasty specificationClass="Celf\UI\components\filter\correo\CorreoFilter" templateLocation="CorreoFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:correo.nombre" />
+		
+	</component>
+	
+	<component id="email" type="InputText">
+		<param name="name" value="str:email" />
+		<param name="value" value="criteria.email" />
+		<param name="placeholder" value="msg:correo.email" />
+		
+	</component>
+	
+	<component id="activo" type="InputCombo">
+		<param name="inputId" value="str:activo" />
+		<param name="name" value="str:activo" />
+		<param name="options" value="filtrosSINO" />
+	</component>
+
+</rasty>

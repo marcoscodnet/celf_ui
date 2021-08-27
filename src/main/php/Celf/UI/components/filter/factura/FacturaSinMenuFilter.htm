@@ -1,0 +1,183 @@
+<!-- BEGIN:main -->
+<script>
+
+function submitBuscarSinSeguridad(webpath, filterId, resultId){
+	//alert(filterId+' '+resultId);
+	var formData = $( filterId ).serialize();
+	
+	//$( resultId ).fadeTo("fast", 0.33);
+	right = ($(window).width() / 2) - (32);		
+	htmlSearching = "<div style='position:absolute; right:" + right + "px;top:40px;'><img src='" + webpath + "/css/images/loading.gif' /></div>";
+	$( resultId ).html($( resultId ).html() + htmlSearching);
+		
+	$.ajax({
+		  url: webpath + "Facturas.rasty",
+		  type: "POST",
+		  data: formData,
+		  cache: false,
+		  success: function(content){
+		    
+			$( resultId ).html(content);
+			//$( resultId ).fadeTo("fast", 1);
+			
+		  }
+		});	
+}
+
+
+function submitBuscarFacturas(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarFacturas();
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+}
+
+function ordenarFacturas(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+}
+
+function paginarFacturas(page){
+	$( "#page" ).val(page);
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarFactura(event, facturaId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el factura */
+	
+	gotoLink("{linkSeleccionar}?oid="+facturaId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscarSinSeguridad("{WEB_PATH}", "#facturas_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+
+
+<form class="cuentas_form" id="facturas_filter{id}">
+
+		
+	
+	<div class="fusion-page-title-bar fusion-page-title-bar-none fusion-page-title-bar-left">
+	<div class="fusion-page-title-row">
+		<div class="fusion-page-title-wrapper">
+			<div class="fusion-page-title-captions">
+
+																			<h1 class="entry-title">Factura Electr&oacute;nica</h1>
+
+									
+				
+			</div>
+
+										
+		</div>
+	</div>
+</div>
+		
+		
+		
+						
+			<div class="fusion-row" style="">
+<section id="content" style="width: 100%;">
+			<div id="post-1849" class="post-1849 page type-page status-publish hentry">
+			
+			<span class="entry-title rich-snippet-hidden">
+			Factura Electr&oacute;nica</span>
+	
+			<span class="vcard rich-snippet-hidden">
+			<span class="fn">
+				<a href="http://www.coopelf.com.ar/author/admin/" title="Entradas de admin" rel="author">admin</a>			</span>
+		</span>
+	
+			<span class="updated rich-snippet-hidden">
+			2018-11-23T11:45:55+00:00		</span>
+	
+																			
+			<div class="post-content">
+				<div  class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth"  style='background-color: #ffffff;background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'><div class="fusion-builder-row fusion-row "><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_2  fusion-one-half fusion-column-first 1_2"  style='margin-top:0px;margin-bottom:0px;width:50%;width:calc(50% - ( ( 4% ) * 0.5 ) );margin-right: 4%;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url=""><br>
+						<p>Ahora pod&eacute;s ver y descargar tu facturas en forma electr&oacute;nica. Para ello, ten&eacute;s que ingresar el n&uacute;mero de suministro.</p>
+<p>El n&uacute;mero de suministro lo pod&eacute;s encontrar en cualquier factura anterior en el margen superior derecho.</p>
+<div class="fusion-clearfix"></div>
+
+					</div>
+				</div><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_2  fusion-one-half fusion-column-last 1_2"  style='margin-top:0px;margin-bottom:0px;width:50%;width:calc(50% - ( ( 4% ) * 0.5 ) );'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url="">
+						<span class="fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img src="http://www.coopelf.com.ar/sistemacelf/css/images/factura-electronica-celf.jpg" width="414px" height="225px" alt="" title="factura-electronica-banner" class="img-responsive wp-image-1725"  sizes="(max-width: 800px) 100vw, 600px" /></span><div class="fusion-clearfix"></div>
+
+					</div>
+				</div></div></div><div  class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth"  style='background-color: #ffffff;background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'><div class="fusion-builder-row fusion-row "><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last 1_1"  style='margin-top:0px;margin-bottom:0px;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url="">
+						<div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep sep-single sep-solid" style="border-color:#f38000;border-top-width:2px;margin-left: auto;margin-right: auto;margin-top:20px;margin-bottom:20px;"></div><div class="fusion-clearfix"></div>
+
+					</div>
+				</div></div></div><div  class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth"  style='background-color: #ffffff;background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'><div class="fusion-builder-row fusion-row "><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4  fusion-one-fourth fusion-column-first 1_4"  style='margin-top:0px;margin-bottom:0px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding-top: 10px;"  data-bg-url="">
+						<div class="fusion-title title fusion-sep-none fusion-title-size-four" style="margin-top:0px;margin-bottom:10px;"><h4 class="title-heading-right">Nro. de suministro:</h4></div><div class="fusion-clearfix"></div>
+
+					</div>
+				</div><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4  fusion-one-fourth 1_4"  style='margin-top:0px;margin-bottom:0px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url="">
+						<p><rasty id="suministro" /></p>
+<div class="fusion-clearfix"></div>
+
+					</div>
+				</div><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4  fusion-one-fourth 1_4"  style='margin-top:0px;margin-bottom:0px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url="">
+						<div class="fusion-button-wrapper"><style type="text/css" scoped="scoped">.fusion-button.button-1 .fusion-button-text, .fusion-button.button-1 i {color:#ffffff;}.fusion-button.button-1 {border-width:0px;border-color:#ffffff;}.fusion-button.button-1 .fusion-button-icon-divider{border-color:#ffffff;}.fusion-button.button-1:hover .fusion-button-text, .fusion-button.button-1:hover i,.fusion-button.button-1:focus .fusion-button-text, .fusion-button.button-1:focus i,.fusion-button.button-1:active .fusion-button-text, .fusion-button.button-1:active{color:#ffffff;}.fusion-button.button-1:hover, .fusion-button.button-1:focus, .fusion-button.button-1:active{border-width:0px;border-color:#ffffff;}.fusion-button.button-1:hover .fusion-button-icon-divider, .fusion-button.button-1:hover .fusion-button-icon-divider, .fusion-button.button-1:active .fusion-button-icon-divider{border-color:#ffffff;}.fusion-button.button-1{width:auto;}</style><a class="fusion-button button-flat fusion-button-square button-large button-default button-1" target="_self" href="#" onclick="javascript: $( '#page' ).val( 1 ); submitBuscarSinSeguridad('{WEB_PATH}', '#facturas_filter{id}', '#{resultDiv}');"><span class="fusion-button-text">{lbl_submit}</span></a></div><div class="fusion-clearfix"></div>
+
+					</div>
+				</div><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4  fusion-one-fourth fusion-column-last 1_4"  style='margin-top:0px;margin-bottom:0px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"  data-bg-url="">
+						<div class="fusion-clearfix"></div>
+
+					</div>
+				</div></div></div>
+							</div>
+																					</div>
+		</section>
+					
+				</div>  <!-- fusion-row -->
+			
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarFacturas">
+	<input type="hidden" name="paginationCallback" value="paginarFacturas">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy">
+	<input type="hidden" id="orderByType" name="orderByType" value="ASC">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+
+</div>
+<!-- END:main -->

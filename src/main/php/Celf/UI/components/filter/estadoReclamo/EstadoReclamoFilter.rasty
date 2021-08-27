@@ -1,0 +1,12 @@
+<rasty specificationClass="Celf\UI\components\filter\estadoReclamo\EstadoReclamoFilter" templateLocation="EstadoReclamoFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:estadoReclamo.nombre" />
+		
+	</component>
+	
+	
+
+</rasty>

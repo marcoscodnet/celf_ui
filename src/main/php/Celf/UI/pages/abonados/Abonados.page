@@ -1,0 +1,13 @@
+<rasty specificationClass="Celf\UI\pages\abonados\Abonados" templateLocation="pages/abonados/Abonados.htm"> 
+
+	<param name="layoutType" value="str:CelfMetroLayout" />
+
+	<component id="abonadosFilter" type="AbonadoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:abonado.buscar" />
+		<param name="legendAgain" value="msg:abonado.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>
